@@ -2,44 +2,23 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creeper Site</title>
+    <title>Зеленый Крипер</title>
     <style>
-        body, html {
-            margin: 0; padding: 0; width: 100%; height: 100%;
-            background: #000; display: flex; flex-direction: column;
-            align-items: center; justify-content: center;
-            overflow: hidden; font-family: sans-serif;
-        }
-        .creeper {
-            width: 150px; height: 150px; background: #55FF55;
-            border-radius: 15px; position: relative;
-            box-shadow: 0 0 30px #55FF55; border: 4px solid #004400;
-        }
-        .creeper:before {
-            content: ''; position: absolute; width: 30px; height: 30px;
-            background: #000; top: 30px; left: 25px; box-shadow: 70px 0 #000;
-        }
-        .creeper:after {
-            content: ''; position: absolute; width: 50px; height: 60px;
-            background: #000; bottom: 0; left: 50px;
-        }
-        .btn {
-            margin-top: 40px; padding: 15px 30px; background: #5865F2;
-            color: white; text-decoration: none; font-weight: bold;
-            font-size: 22px; border: 3px solid white; border-radius: 10px;
-            animation: bounce 1.5s infinite alternate;
-        }
-        @keyframes bounce { from { transform: translateY(0); } to { transform: translateY(-20px); } }
-        .fire {
-            position: fixed; bottom: 0; width: 100%; height: 120px;
-            background: linear-gradient(to top, #ff4500, transparent); opacity: 0.8;
-        }
+        body { background-color: #000 !important; color: white; text-align: center; font-family: sans-serif; margin: 0; padding: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; }
+        .creeper { width: 150px; height: 150px; background: #55FF55; margin-bottom: 20px; border-radius: 15px; position: relative; box-shadow: 0 0 20px #55FF55; border: 4px solid #004400; }
+        .creeper:before { content: ''; position: absolute; width: 30px; height: 30px; background: #000; top: 30px; left: 25px; box-shadow: 70px 0 #000; }
+        .creeper:after { content: ''; position: absolute; width: 50px; height: 60px; background: #000; bottom: 0; left: 50px; }
+        .btn { display: block; width: 230px; margin: 10px 0; padding: 15px; border: 2px solid white; border-radius: 12px; text-decoration: none; color: white; font-weight: bold; }
+        .ds { background: #5865F2; }
+        .yt { background: #FF0000; }
+        .sh { background: #2ecc71; cursor: pointer; }
     </style>
 </head>
 <body>
     <div class="creeper"></div>
-    <a href="https://discord.gg/62Tdgsdm" class="btn">JOIN DISCORD</a>
-    <div class="fire"></div>
+    <a href="https://discord.gg/62Tdgsdm" class="btn ds">JOIN DISCORD</a>
+    <a href="https://www.youtube.com/@%D0%97%D0%95%D0%9B%D0%95%D0%9D%D0%AB%D0%99_%D0%9A%D0%A0%D0%98%D0%9F%D0%95%D0%A0-%D1%8B6%D1%85" target="_blank" class="btn yt">КРИПЕР ЮТУБ</a>
+    <div class="btn sh" onclick="alert('Скопируй ссылку сверху!')">ПОДЕЛИТЬСЯ</div>
 </body>
 </html>
+
